@@ -1,0 +1,78 @@
+
+sources.fileextensions = "*.cpp *.qdoc *.mm *.qml"
+headers.fileextensions = "*.h *.ch *.h++ *.hh *.hpp *.hxx"
+
+headerdirs = ../src
+sourcedirs = ../src
+
+sources = \
+          elements.qdoc
+
+
+sourceencoding = UTF-8
+outputencoding = UTF-8
+naturallanguage = en_US
+
+outputdir = html
+
+indexes = $QTDIR/doc/html/qt.index
+
+project = qmldbusplugin
+description = QML DBus Plugin
+
+
+# Define the location of the templates to use. Style sheets and scripts are
+# specified relative to the template directory and will be copied into
+# subdirectories of the output directory.
+
+HTML.templatedir = template
+
+HTML.stylesheets = template/style/offline.css \
+
+# Adding jquery and functions - providing online tools and search features
+HTML.scripts     =
+
+
+# Files not referenced in any qdoc file.
+# See also qhp.Qt.extraFiles
+extraimages.HTML        = images/qt-logo.png \
+                          images/bg_l.png \
+                          images/bg_l_blank.png \
+                          images/bg_ll_blank.png \
+                          images/bg_ul_blank.png \
+                          images/btn_next_green.png \
+                          images/btn_prev_green.png \
+                          images/header_bg.png \
+                          images/bg_r.png \
+                          images/box_bg.png \
+                          images/breadcrumb.png \
+                          images/bullet_gt.png \
+                          images/bullet_dn.png \
+                          images/bullet_sq.png \
+                          images/bullet_up.png \
+                          images/arrow_down.png \
+                          images/feedbackground.png \
+                          images/horBar.png \
+                          images/page.png \
+                          images/page_bg.png \
+                          images/sprites-combined.png \
+                          images/spinner.gif
+
+# Include the style sheets and scripts used.
+
+HTML.headerstyles = \
+    "  <link rel=\"stylesheet\" type=\"text/css\" href=\"style/offline.css\" />\n"
+
+
+qhp.projects            = qmldbusplugin
+
+qhp.qmldbusplugin.file                = qmldbusplugin.qhp
+qhp.qmldbusplugin.namespace           = net.pelagicore.qmldbusplugin.100
+qhp.qmldbusplugin.virtualFolder       = qdoc
+qhp.qmldbusplugin.indexTitle          = QML DBus Plugin
+qhp.qmldbusplugin.indexRoot           =
+qhp.qmldbusplugin.extraFiles          = style/offline.css
+qhp.qmldbusplugin.filterAttributes    = qmldbusplugin dbus
+
+
+

@@ -1,0 +1,12 @@
+*.o
+*~
+*.orig
+*.bak
+*.obj
+moc_*
+*.moc
+*.pro.user*
+Makefile
+core
+bin
+DEADJOE

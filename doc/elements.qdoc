@@ -1,0 +1,49 @@
+/****************************************************************************
+**
+** Copyright (C) 2016 Pelagicore AG
+** Contact: https://www.qt.io/licensing/
+**
+** This file is part of the documentation of the qmldbusplugin of the Qt Toolkit.
+**
+** $QT_BEGIN_LICENSE:FDL-QTAS$
+** Commercial License Usage
+** Licensees holding valid commercial Qt Automotive Suite licenses may use
+** this file in accordance with the commercial license agreement provided
+** with the Software or, alternatively, in accordance with the terms
+** contained in a written agreement between you and The Qt Company.  For
+** licensing terms and conditions see https://www.qt.io/terms-conditions.
+** For further information use the contact form at https://www.qt.io/contact-us.
+**
+** GNU Free Documentation License Usage
+** Alternatively, this file may be used under the terms of the GNU Free
+** Documentation License version 1.3 as published by the Free Software
+** Foundation and appearing in the file included in the packaging of
+** this file. Please review the following information to ensure
+** the GNU Free Documentation License version 1.3 requirements
+** will be met: https://www.gnu.org/licenses/fdl-1.3.html.
+** $QT_END_LICENSE$
+**
+****************************************************************************/
+
+/*!
+  \page qdeclarativeelements.html
+  \target elements
+  \title QML Elements
+  \brief A listing of standard QML elements.
+
+These are the functionally grouped lists of QML elements as part of
+com.pelagicore.qmldbusplugin.
+
+Elements are declared with the their name and two curly braces. Elements may
+be nested in elements, thereby creating a parent-child relationship between the
+two elements.
+
+\section1 Basic QML Elements
+\list
+\li \l {DBus} - A QML representation of a Connection to specific DBus
+\li \l {SessionBus} - A QML representation of a Connection to the SessionBus
+\li\l {SystemBus} - A QML representation of a Connection to the SystemBus
+\li \l {DBusInterface} - A QML representation of a DBus Interface
+\endlist
+
+*/
