@@ -50,8 +50,6 @@ public:
                                    const QDBusConnection &connection = QDBusConnection::sessionBus(),
                                    QObject *parent = 0);
 
-    int qt_metacall(QMetaObject::Call _c, int _id, void **_a);
-
 private slots:
 
     //FIX ME

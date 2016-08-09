@@ -53,32 +53,6 @@ QDBusInterfaceWrapper::QDBusInterfaceWrapper(const QString &service, const QStri
                        SLOT(onPropertiesChanged(QString,QVariantMap,QStringList)));
 }
 
-int QDBusInterfaceWrapper::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
-{
-    if (_c == QMetaObject::ReadProperty || _c == QMetaObject::WriteProperty) {
-        QMetaProperty mp = metaObject()->property(_id);
-
-        QVariant var;
-        if (_c == QMetaObject::ReadProperty) {
-            var = QVariant(mp.type());
-        } else {
-            var = *reinterpret_cast<QVariant*>(_a[0]);
-        }
-
-        int status = -1;
-        void *args[] = { 0, &var, &status};
-
-        QDBusInterface::qt_metacall(_c, _id, args);
-
-        QVariant &returnValue = *reinterpret_cast<QVariant*>(_a[0]);
-        returnValue = var;
-
-        return status;
-    } else {
-        return QDBusInterface::qt_metacall(_c, _id, _a);
-    }
-}
-
 void QDBusInterfaceWrapper::onPropertiesChanged(const QString &interfaceName, const QVariantMap &changed_properties, const QStringList &invalidated_properties)
 {
     if (interfaceName == interfaceName) {
